@@ -1,0 +1,285 @@
+-- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
+-- import: fifthtry.github.io/package-doc/doc as pd
+-- import: fifthtry.github.io/package-doc/forest-theme as ds
+-- import: fifthtry.github.io/package-doc/footer
+
+;; ⚠️fastn-builders::⚠️ before using this file please find and replace Fira-Code
+;; with font name you have given inside 
+;; `shaheen-senpai.github.io/fira-code/FASTN.ftd file
+
+
+
+
+
+
+-- ds.page: 
+show-footer: true
+site-name: `fira-code`
+
+-- ds.page.footer:
+
+-- footer.fastn-footer:
+
+-- end: ds.page.footer
+
+-- pd.package: FTD fira-code package
+name: shaheen-senpai.github.io/fira-code
+
+This FTD font `fira-code` package is for your ftd web projects. To Use this
+fira-code inside `FTD` project follow below instructions.
+
+-- ds.h3: How to use fira-code?
+
+-- ds.code: Add this to your FASTN.ftd
+lang: ftd
+
+\-- fastn.dependency: shaheen-senpai.github.io/fira-code
+
+-- ds.markdown: 
+
+After adding fira-code dependency inside your `FASTN.ftd` file, You need to
+add fira-code assets and import it inside your `.ftd` files where you are
+using this font for your custom font types. 
+
+To include fira-code into your `ftd` file follow below instructions.
+
+-- ds.code:
+lang: ftd
+
+\-- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
+
+
+-- ds.h3: How to create a custom fira-code type? 
+
+-- ds.markdown: 
+
+We don't recommend creating custom types. We recommend to use 
+our [fira-code-typography](https://shaheen-senpai.github.io/fira-code-typography)
+
+If you're using [fira-code-typography](https://shaheen-senpai.github.io/fira-code-typography) 
+and still your designer has introduced new font size which are not included or 
+part of our [fira-code-typography](https://shaheen-senpai.github.io/fira-code-typography) 
+then only define custom types. 
+
+We hope you shouldn't need to define a custom type.
+
+Below is an example of creating a custom `ftd.type` using fira-code.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- ftd.type fira-code-size-12-desktop:
+size.px: 12
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+\-- ftd.type fira-code-size-12-mobile:
+size.px: 12
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+\-- ftd.responsive-type fira-code-size-12-400:
+desktop: $fira-code-size-12-desktop
+mobile: $fira-code-size-12-mobile
+
+\-- ftd.text: 
+role: $fira-code-size-12-400
+color: $inherited.colors.text-strong
+
+`font-size: 12px, font-weight: 400` 
+
+👉 The quick brown fox jumps over the lazy dog 
+
+-- ds.rendered.output:
+
+-- ftd.text: 
+role: $fira-code-size-12-400
+color: $inherited.colors.text-strong
+
+`font-size: 12px, font-weight: 400` 
+
+👉 The quick brown fox jumps over the lazy dog 
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+-- end: ds.page
+
+
+
+
+
+
+
+
+
+
+-- ftd.type fira-code-size-12-desktop:
+size.px: 12
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-12-mobile:
+size.px: 12
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-12-400:
+desktop: $fira-code-size-12-desktop
+mobile: $fira-code-size-12-mobile
+
+
+
+
+
+-- ftd.type fira-code-size-12-500-desktop:
+size.px: 12
+weight: 500
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-12-500-mobile:
+size.px: 12
+weight: 500
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-12-500:
+desktop: $fira-code-size-12-500-desktop
+mobile: $fira-code-size-12-500-mobile
+
+
+
+
+
+-- ftd.type fira-code-size-12-800-desktop:
+size.px: 12
+weight: 800
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-12-800-mobile:
+size.px: 12
+weight: 800
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-12-800:
+desktop: $fira-code-size-12-800-desktop
+mobile: $fira-code-size-12-800-mobile
+
+
+
+
+
+-- ftd.type fira-code-size-18-desktop:
+size.px: 18
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-18-mobile:
+size.px: 18
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-18-400:
+desktop: $fira-code-size-18-desktop
+mobile: $fira-code-size-18-mobile
+
+
+
+
+
+-- ftd.type fira-code-size-18-500-desktop:
+size.px: 18
+weight: 500
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-18-500-mobile:
+size.px: 18
+weight: 500
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-18-500:
+desktop: $fira-code-size-18-500-desktop
+mobile: $fira-code-size-18-500-mobile
+
+
+
+
+
+-- ftd.type fira-code-size-18-800-desktop:
+size.px: 18
+weight: 800
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-18-800-mobile:
+size.px: 18
+weight: 800
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-18-800:
+desktop: $fira-code-size-18-800-desktop
+mobile: $fira-code-size-18-800-mobile
+
+
+
+
+
+-- ftd.type fira-code-size-48-desktop:
+size.px: 48
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-48-mobile:
+size.px: 48
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-48-400:
+desktop: $fira-code-size-48-desktop
+mobile: $fira-code-size-48-mobile
+
+
+
+
+
+-- ftd.type fira-code-size-48-500-desktop:
+size.px: 48
+weight: 500
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-48-500-mobile:
+size.px: 48
+weight: 500
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-48-500:
+desktop: $fira-code-size-48-500-desktop
+mobile: $fira-code-size-48-500-mobile
+
+
+
+
+
+-- ftd.type fira-code-size-48-800-desktop:
+size.px: 48
+weight: 800
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-48-800-mobile:
+size.px: 48
+weight: 800
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-48-800:
+desktop: $fira-code-size-48-800-desktop
+mobile: $fira-code-size-48-800-mobile
