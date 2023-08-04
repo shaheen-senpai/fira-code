@@ -3,6 +3,7 @@
 -- fastn.package: shaheen-senpai.github.io/fira-code
 zip: github.com/fifthtry/fira-code/archive/refs/heads/main.zip
 
+-- fastn.dependency: fifthtry.github.io/package-doc 
 
 -- fastn.font: Fira-Code
 style: normal
